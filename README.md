@@ -62,3 +62,18 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Installation Steps
+
+#### On your terminal navigate to the project directory and type the command:
+1. Composer update
+2. Create empty database in phpmyadmin
+3. Copy the .env.example by type the command: <b> cp .env.example .env </b>
+4. In the .env file, add database information to allow Laravel to connect to the database. Fill the DB_DATABASE in .env with the new database you recently create in point 2
+5. <b> php artisan migrate </b> and <b> php artisan key:generate </b> on terminal.
+6. php artisan db:seed --class=UserSeeder
+7. php artisan db:seed --class=CategorySeeder
+8. Run the project: php artisan serve
+9. In browser type localhost:8000
+<br> <br>
+Note: Don't forget to start apache & MyQL on server and make sure your device is connected to the internet
+
