@@ -68,7 +68,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 1. Composer update
 2. Create empty database in phpmyadmin
 3. Copy the .env.example by type the command: <b> cp .env.example .env </b>
-4. In the .env file, add database information to allow Laravel to connect to the database. Fill the DB_DATABASE in .env with the new database you recently create in point 2
+4. In the .env file, add database information to allow Laravel to connect to the database. Fill the DB_DATABASE in .env with the new database name you recently create in point 2
 5. <b> php artisan migrate </b> and <b> php artisan key:generate </b> on terminal.
 6. php artisan db:seed --class=UserSeeder
 7. php artisan db:seed --class=CategorySeeder
