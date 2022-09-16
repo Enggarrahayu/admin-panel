@@ -9,6 +9,9 @@ class Category extends Model
 {
     protected $table = 'category';
     protected $primaryKey = "id";
+    protected $fillable = [
+        'cat_name', 'cat_description'
+    ];
     public function product()
     {
         return $this->hasMany(Product::class);

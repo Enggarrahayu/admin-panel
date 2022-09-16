@@ -21,6 +21,11 @@ class CreateProductTable extends Migration
             $table->integer('stock');
             $table->float('weight');
             $table->timestamps();
+            $table->unsignedBigInteger('category_id');
+            $table->foreign('category_id')
+                ->references('id')
+                ->on('category')
+                ->onDelete('cascade');
         });
     }
 
